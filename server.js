@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -37,4 +38,4 @@ app.get('/about',(req,res)=>{
 });
 
 
-app.listen(3000);
+app.listen(port);
